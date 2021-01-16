@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="English">علوم</string>
+    <string name="Sports">رياضه</string>
+    <string name="Science">علوم</string>
+    <string name="Health">صحه</string>
+    <string name="Technology">تكنولوجيا</string>
+    <string name="Masry_ELYoum">المصرى اليوم</string>
+    <string name="Youm7">اليوم السابع</string>
+    <string name="FilGoal">فى الجول</string>
+    <string name="Support" />
+</resources>

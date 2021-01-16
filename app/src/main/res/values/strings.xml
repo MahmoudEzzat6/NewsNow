@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name" translatable="false">NewsNow</string>
+    <string name="open" translatable="false">ooen</string>
+    <string name="close" translatable="false">close</string>
+    <string name="Sports">Sports</string>
+    <string name="Science">Science</string>
+    <string name="Health">Health</string>
+    <string name="Technology">Technology</string>
+    <string name="Masry_ELYoum">Masry_ELYoum</string>
+    <string name="Youm7">Youm7</string>
+    <string name="FilGoal">FilGoal</string>
+ />
+
+</resources>
