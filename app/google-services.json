@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "879904619692",
-    "project_id": "newsnow23-848c1",
-    "storage_bucket": "newsnow23-848c1.appspot.com"
+    "project_number": "889964152292",
+    "project_id": "newsnow-fcbe5",
+    "storage_bucket": "newsnow-fcbe5.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:879904619692:android:b65368a6525cb4a4243309",
+        "mobilesdk_app_id": "1:889964152292:android:ff1dbfa7b572310e9773f1",
         "android_client_info": {
-          "package_name": "com.NewsNow.newsnowmha"
+          "package_name": "com.NewsNow.newsnowMa"
         }
       },
       "oauth_client": [
         {
-          "client_id": "879904619692-0ds4eqfgi9bpc8t7ke0f2hoqlarqjuqd.apps.googleusercontent.com",
+          "client_id": "889964152292-mqtkjr2d8tg8blqjgf2k3p52e9j0a42j.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB9NngIF8sZ0VShcXZNmS7fv9X0GVFIJTU"
+          "current_key": "AIzaSyBf-0Mma3Q7EivDBueUCLGVM0vnWS3uuMc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "879904619692-0ds4eqfgi9bpc8t7ke0f2hoqlarqjuqd.apps.googleusercontent.com",
+              "client_id": "889964152292-mqtkjr2d8tg8blqjgf2k3p52e9j0a42j.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

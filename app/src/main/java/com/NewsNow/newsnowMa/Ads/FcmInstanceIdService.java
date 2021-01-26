@@ -1,4 +1,4 @@
-package com.NewsNow.newsnowmha;
+package com.NewsNow.newsnowMa.Ads;
 
 import android.content.Context;
 

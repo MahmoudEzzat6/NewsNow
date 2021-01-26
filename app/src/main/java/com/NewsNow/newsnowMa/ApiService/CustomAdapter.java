@@ -1,4 +1,4 @@
-package com.NewsNow.newsnowmha;
+package com.NewsNow.newsnowMa.ApiService;
 
 import android.app.Activity;
 import android.view.View;
@@ -7,6 +7,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.NewsNow.newsnowMa.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

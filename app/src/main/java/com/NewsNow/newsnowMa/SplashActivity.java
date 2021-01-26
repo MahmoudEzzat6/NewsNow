@@ -1,8 +1,9 @@
-package com.NewsNow.newsnowmha;
+package com.NewsNow.newsnowMa;
 
 import android.content.Intent;
 import android.util.Log;
 
+import com.NewsNow.newsnowMa.ApiService.MainActivity;
 import com.daimajia.androidanimations.library.Techniques;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
@@ -33,7 +34,7 @@ public class SplashActivity extends AwesomeSplash {
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
 
         //Customize Circular Reveal
-        configSplash.setBackgroundColor(R.color.white); //any color you want form colors.xml
+        configSplash.setBackgroundColor(R.color.purble); //any color you want form colors.xml
         configSplash.setAnimCircularRevealDuration(1000); //int ms
         configSplash.setRevealFlagX(Flags.REVEAL_RIGHT);  //or Flags.REVEAL_LEFT
         configSplash.setRevealFlagY(Flags.REVEAL_BOTTOM); //or Flags.REVEAL_TOP
@@ -47,7 +48,7 @@ public class SplashActivity extends AwesomeSplash {
 
         //Customize Title
         configSplash.setTitleSplash("News Now");
-        configSplash.setTitleTextColor(R.color.pink);
+        configSplash.setTitleTextColor(R.color.white);
         configSplash.setTitleTextSize(35f); //float value
 //        configSplash.setTitleFont("font/bungee.ttf");
         configSplash.setAnimTitleDuration(2000);
@@ -86,10 +87,8 @@ public class SplashActivity extends AwesomeSplash {
     }
     private void openActivity()
     {
-      /*  Intent intent=new Intent(this,MainActivity.class);
-        intent.putExtra(Constants.CATEGORY_KEY,("general"));
-        startActivity(intent);*/
-        startActivity(new Intent(SplashActivity.this,MainActivity.class));
+      
+        startActivity(new Intent(SplashActivity.this, MainActivity.class));
         finish();
     }
 

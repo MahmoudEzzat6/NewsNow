@@ -43,6 +43,10 @@
         android:title="@string/FilGoal"
         android:icon="@drawable/ic_baseline_picture_in_picture_24"/>
 
+<group>
+    <item
+        android:orderInCategory="900"
+        android:title="Data From:https://newsapi.org" />
 
-
+</group>
 </menu>

@@ -1,4 +1,4 @@
-package com.NewsNow.newsnowmha;
+package com.NewsNow.newsnowMa.ApiService;
 
 import java.util.ArrayList;
 

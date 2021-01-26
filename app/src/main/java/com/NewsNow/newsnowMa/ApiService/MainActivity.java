@@ -1,5 +1,6 @@
-package com.NewsNow.newsnowmha;
+package com.NewsNow.newsnowMa.ApiService;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -18,11 +19,15 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.NewsNow.newsnowMa.ImplemenApi.CallAble;
+import com.NewsNow.newsnowMa.ImplemenApi.Constants;
+import com.NewsNow.newsnowMa.R;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -32,7 +37,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
    private String sentCategory;
-    private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle mtoggle;
 
     @Override
@@ -40,14 +44,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        drawerLayout = findViewById(R.id.drawer);
+        DrawerLayout drawerLayout = findViewById(R.id.drawer);
         mtoggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
         drawerLayout.addDrawerListener(mtoggle);
         mtoggle.syncState();
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         NavigationView navigationView=findViewById(R.id.NavicationView);
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @SuppressLint("NonConstantResourceId")
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem Item) {
                 int id = Item.getItemId();
@@ -123,6 +128,7 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<NewsModel> call, Response<NewsModel> response) {
                 progressBar.setVisibility(View.GONE);
                 NewsModel newsModel= response.body();
+                assert newsModel != null;
                 ArrayList<Article>articles=newsModel.articles;
                 showListView(articles);
             }
